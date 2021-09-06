@@ -24,5 +24,16 @@ public class Alumno {
     @Temporal(TemporalType.DATE)
     private Date fechaNacimiento;
 
+
+    @Override
+    public String toString() {
+        return "{" +
+            " idAlumno='" + getIdAlumno() + "'" +
+            ", nombre='" + getNombre() + "'" +
+            ", dni='" + getDni() + "'" +
+            ", correo='" + getCorreo() + "'" +
+            ", fechaNacimiento='" + getFechaNacimiento() + "'" +
+            "}";
+    }
     
 }
